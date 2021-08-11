@@ -1,0 +1,45 @@
+header {
+  background-color: #868686;
+}
+
+p {
+  font-family: serif;
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+td,
+th {
+  text-align: left;
+}
+
+table,
+p,
+h1,
+h2,
+img,
+figcaption {
+  margin: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid green;
+  padding: 5px;
+}
+
+tr:nth-child(2n) {
+  background-color: #d7fad7;
+}
+
+th:only-child {
+  background-color: #fa8686;
+}

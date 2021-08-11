@@ -1,0 +1,32 @@
+@import "_header";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+td,
+th {
+	text-align: left;
+}
+table,
+p,
+h1,
+h2,
+img,
+figcaption {
+	margin: 20px;
+}
+table {
+	border-collapse: collapse;
+}
+th,
+td {
+	border: 1px solid green;
+	padding: 5px;
+}
+tr:nth-child(2n) {
+	background-color: rgb(215, 250, 215);
+}
+th:only-child {
+	background-color: rgb(250, 134, 134);
+}
