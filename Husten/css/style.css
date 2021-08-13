@@ -30,16 +30,18 @@ table {
   border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
   border: 1px solid green;
   padding: 5px;
 }
 
-tr:nth-child(2n) {
-  background-color: #d7fad7;
+ol {
+  margin-left: 45px;
 }
 
-th:only-child {
-  background-color: #fa8686;
+/*tr:nth-child(2n) {
+	background-color: rgb(215, 250, 215);
 }
+th:only-child {
+	background-color: rgb(250, 134, 134);
+}*/
