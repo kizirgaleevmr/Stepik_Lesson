@@ -4,6 +4,10 @@
 	margin: 0;
 	padding: 0;
 }
+.wrapper {
+	margin: 0 auto;
+	width: 996px;
+}
 td,
 th {
 	text-align: left;
@@ -12,6 +16,7 @@ table,
 p,
 h1,
 h2,
+h3,
 img,
 figcaption {
 	margin: 20px;
@@ -19,12 +24,12 @@ figcaption {
 table {
 	border-collapse: collapse;
 }
-th,td,
- {
+th,
+td {
 	border: 1px solid green;
 	padding: 5px;
 }
-ol{
+ol {
 	margin-left: 45px;
 }
 /*tr:nth-child(2n) {

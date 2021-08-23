@@ -1,5 +1,8 @@
 header {
-  background-color: #868686;
+  margin: 20px;
+  padding: 15px;
+  background-color: #ffe033;
+  color: grey;
 }
 
 p {
@@ -7,9 +10,31 @@ p {
   font-size: 15px;
 }
 
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "\25B6";
+  padding-right: 0.5em;
+}
+
+details[open] > summary::before {
+  content: "\25BC";
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 996px;
 }
 
 td,
@@ -21,6 +46,7 @@ table,
 p,
 h1,
 h2,
+h3,
 img,
 figcaption {
   margin: 20px;
@@ -30,7 +56,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: 1px solid green;
   padding: 5px;
 }
