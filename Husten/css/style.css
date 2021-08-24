@@ -27,6 +27,12 @@ details[open] > summary::before {
   content: "\25BC";
 }
 
+details > p {
+  font-size: 20px;
+  color: darkolivegreen;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;

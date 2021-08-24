@@ -99,4 +99,31 @@ $ git checkout testing
 	Все описанные действия можно визуализировать с помощью команды git log. Для отображения истории коммитов, текущего положения указателей веток и истории ветвления выполните команду 
 	git log --oneline --decorate --graph --all.
 	
+Ветвление в Git - Основы ветвления и слияния
+	Чтобы создать ветку и сразу переключиться на нее, можно выполнить команду git checkout с параметром -b:
+
+$ git checkout -b iss53
+Switched to a new branch "iss53"
+	--Это то же самое что и:
+$ git branch iss53
+$ git checkout iss53
+	Теперь предположим, что вы зафиксировали все свои изменения и можете переключиться на ветку master:
+
+$ git checkout master
+Switched to branch 'master'
+	Теперь вы можете перейти к написанию исправления. Давайте создадим новую ветку для исправления, в которой будем работать, пока не закончим исправление.
+
+$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+	выполнить слияние ветки hotfix с веткой master для включения изменений в продукт. Это делается командой git merge:
+
+$ git checkout master
+$ git merge hotfix
+	удалить ветку hotfix, потому что она больше не нужна — ветка master указывает на то же самое место. Для удаления ветки выполните команду git branch с параметром -d:
+
+$ git branch -d hotfix
+Deleted branch hotfix (3a0874c).
+
+
+
 
